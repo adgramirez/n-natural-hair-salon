@@ -8,8 +8,24 @@ const sora = Sora({
   variable: "--font-sora",
 });
 
-export const nonchalance = localFont({
-  src: "../public/fonts/Nonchalance-Regular.otf",
+const nonchalance = localFont({
+  src: [
+    {
+      path: "./fonts/Nonchalance-Regular.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Nonchalance-Medium.otf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Nonchalance-Bold.otf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
   variable: "--font-nonchalance",
 });
 
@@ -20,12 +36,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={sora.variable}>
+      <body className={`${sora.variable} ${nonchalance.variable} antialiased`}>
         {children}
       </body>
     </html>
