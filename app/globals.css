@@ -1,19 +1,81 @@
 @import "tailwindcss";
 
 :root {
-  --background: #15111f;
-  --foreground: #ffffff;
-
+  --bg: #151121;
+  --surface: #f8f7f5;
+  --text: #ffffff;
+  --muted: #b6b4bd;
   --primary: #e8ff2f;
-  --card: #f8f7f5;
+}
 
-  --text-secondary: #b6b4bd;
-
-  --radius: 32px;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--bg);
+  color: var(--text);
   font-family: var(--font-sora), sans-serif;
+}
+
+.font-sora {
+  font-family: var(--font-sora), sans-serif;
+}
+
+.font-nonchalance {
+  font-family: var(--font-nonchalance), cursive;
+}
+
+@theme {
+  --color-bg: #151121;
+  --color-primary: #E1FF00;
+  --color-text-secondary: #C6C9AB;
+  --color-text-muted: rgba(209,196,233,.8);
+}
+
+/* ===========================
+   Typography
+=========================== */
+
+.hero-heading {
+  font-family: var(--font-nonchalance), cursive;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 61px;
+  letter-spacing: -1.28px;
+  text-shadow: 0 0 10px rgba(0,0,0,.45);
+}
+
+.hero-highlight {
+  font-weight: 700;
+  color: var(--primary);
+  text-shadow: 0 0 10px rgba(225, 255, 0, 0.2);
+}
+
+.nav-text {
+  font-family: var(--font-nonchalance), cursive;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 1.2px;
+}
+
+.button-text {
+  font-family: var(--font-nonchalance), cursive;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 1.2px;
+}
+
+.body-large {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.caption-text {
+  font-size: 14px;
+  line-height: 12px;
+  letter-spacing: 1.2px;
 }
