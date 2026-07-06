@@ -81,9 +81,9 @@ export default function Hero() {
             <p className="body-large mt-[31px] text-[var(--text-secondary)]">
               You came into this work because you love natural hair. But loving the
               <br />
-              craft isn't enough if the environment drains you. You need a salon that
+              craft isn&apos;t enough if the environment drains you. You need a salon that
               <br />
-              respects your time, pays you what you're worth, and gives you the tools
+              respects your time, pays you what you&apos;re worth, and gives you the tools
               <br />
               to grow without burning out.
             </p>
