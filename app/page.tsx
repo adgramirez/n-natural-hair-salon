@@ -6,6 +6,7 @@ import ValueProposition from "@/components/sections/ValueProposition";
 import Testimonials from "@/components/sections/Testimonials";
 import JobBoard from "@/components/sections/JobBoard";
 import FAQ from "@/components/sections/FAQ";
+import FinalCTA from "@/components/sections/FinalCTA";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Testimonials />
       <JobBoard />
       <FAQ />
+      <FinalCTA />
     </>
   );
 }
