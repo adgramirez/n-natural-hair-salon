@@ -4,6 +4,7 @@ import Benefits from "@/components/sections/Benefits";
 import SupportSection from "@/components/sections/SupportSection";
 import ValueProposition from "@/components/sections/ValueProposition";
 import Testimonials from "@/components/sections/Testimonials";
+import JobBoard from "@/components/sections/JobBoard";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <SupportSection />
       <ValueProposition />
       <Testimonials />
+      <JobBoard />
     </>
   );
 }
