@@ -5,7 +5,7 @@ interface ButtonProps {
   href: string;
   children: React.ReactNode;
   variant?: "primary" | "secondary" | "outline";
-  size?: "sm" | "lg" | "job";
+  size?: "sm" | "lg" | "job" | "cta";
   className?: string;
 }
 
@@ -20,6 +20,14 @@ export default function Button({
     sm: "h-[36px] min-w-[144px] px-6",
     lg: "h-[44px] min-w-[214px] px-8",
     job: "h-[52px] w-[251px] px-6",
+    cta: "h-[68px] w-[584px] px-10",
+  };
+
+  const typographyClasses = {
+    sm: "button-text",
+    lg: "button-text",
+    job: "font-nonchalance font-bold text-[16px] leading-[24px] tracking-[0px]",
+    cta: "font-nonchalance font-bold text-[18px] leading-[28px] tracking-[1.8px]",
   };
 
   return (
@@ -29,13 +37,8 @@ export default function Button({
         "inline-flex items-center justify-center rounded-full transition-all duration-300",
 
         sizeClasses[size],
+        typographyClasses[size],
 
-        // Typography
-        size === "job"
-          ? "font-nonchalance text-[16px] font-bold leading-[24px] tracking-[0px]"
-          : "button-text",
-
-        // Variants
         variant === "primary" &&
           "bg-[var(--primary)] text-[#1A1626] hover:opacity-90",
 
