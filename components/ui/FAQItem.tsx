@@ -28,22 +28,22 @@ export default function FAQItem({
     >
       <button
         onClick={() => setOpen(!open)}
-        className="flex w-full items-center justify-between p-4 text-left"
+        className="flex w-full items-center justify-between gap-4 p-4 text-left"
       >
-        <span className="text-[18px] leading-[32px] text-white">
+        <span className="text-[16px] leading-[24px] text-white lg:text-[18px] lg:leading-[32px]">
           {question}
         </span>
 
         {open ? (
-          <ChevronUp size={18} className="text-white" />
+          <ChevronUp size={18} className="shrink-0 text-white" />
         ) : (
-          <ChevronDown size={18} className="text-white" />
+          <ChevronDown size={18} className="shrink-0 text-white" />
         )}
       </button>
 
       {open && (
         <div className="px-4 pb-4">
-          <p className="text-[18px] leading-[32px] text-[rgba(247,250,227,.3)]">
+          <p className="text-[16px] leading-[24px] text-[rgba(247,250,227,.3)] lg:text-[18px] lg:leading-[32px]">
             {answer}
           </p>
         </div>

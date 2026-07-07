@@ -58,7 +58,9 @@ export default function Hero() {
           lg:items-end
           justify-between
           gap-10
-          py-16
+          pt-16
+          pb-16
+          portrait:pb-0
           lg:min-h-[calc(100vh-72px)]
           lg:gap-8
           lg:py-0
@@ -76,6 +78,7 @@ export default function Hero() {
             max-w-[260px]
             select-none
             sm:max-w-[320px]
+            portrait:order-2
             lg:order-2
             lg:w-auto
             lg:max-w-none
@@ -100,7 +103,7 @@ export default function Hero() {
         </div>
 
         {/* Content */}
-        <div className="@container relative z-20 order-2 w-full text-center lg:order-1 lg:min-w-0 lg:max-w-[660px] lg:flex-auto lg:self-center lg:text-left">
+        <div className="@container relative z-20 order-2 w-full text-center portrait:order-1 lg:order-1 lg:min-w-0 lg:max-w-[660px] lg:flex-auto lg:self-center lg:text-left">
 
           <h1 className="hero-heading text-white">
             Natural hair

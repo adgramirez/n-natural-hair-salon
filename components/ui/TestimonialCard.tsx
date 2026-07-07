@@ -10,20 +10,25 @@ export default function TestimonialCard({
   return (
     <article
       className="
-        h-[361px]
-        w-[400px]
+        w-full
+        min-h-[240px]
         rounded-[40px]
         border
         border-[var(--primary)]
-        p-10
+        p-6
         shadow-[0_20px_40px_rgba(224,75,0,0.05)]
+        lg:min-h-[361px]
+        lg:w-[400px]
+        lg:p-10
       "
     >
       <p
         className="
-          text-[18px]
-          leading-[26px]
+          text-[16px]
+          leading-[24px]
           text-white
+          lg:text-[18px]
+          lg:leading-[26px]
         "
       >
         {quote}
@@ -33,9 +38,11 @@ export default function TestimonialCard({
         className="
           mt-0
           text-right
-          text-[18px]
-          leading-[26px]
+          text-[16px]
+          leading-[24px]
           text-white
+          lg:text-[18px]
+          lg:leading-[26px]
         "
       >
         {author}

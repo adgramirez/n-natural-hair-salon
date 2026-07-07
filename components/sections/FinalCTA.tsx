@@ -10,8 +10,10 @@ export default function FinalCTA() {
         border-t
         border-[rgba(225,255,0,.2)]
         bg-[#1A1626]
-        py-[126.89px]
-        pb-32
+        py-16
+        pb-16
+        lg:py-[126.89px]
+        lg:pb-32
       "
     >
       {/* Radial Gradient */}
@@ -35,11 +37,13 @@ export default function FinalCTA() {
           <h2
             className="
               font-nonchalance
-              text-[64px]
+              text-[26px]
               font-bold
-              leading-[70.4px]
+              leading-[30px]
               tracking-[-1.28px]
               text-white
+              lg:text-[64px]
+              lg:leading-[70.4px]
             "
           >
             build your career
@@ -53,13 +57,17 @@ export default function FinalCTA() {
           <p
             className="
               mt-8
+              w-full
               max-w-[620px]
               font-nonchalance
-              text-[16px]
+              text-[14px]
               font-bold
-              leading-[21px]
-              tracking-[-1.28px]
+              leading-[19px]
+              tracking-[-0.5px]
               text-white
+              lg:text-[16px]
+              lg:leading-[21px]
+              lg:tracking-[-1.28px]
             "
           >
             You do not have to choose between doing great work and being

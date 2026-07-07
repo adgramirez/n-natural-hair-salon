@@ -8,11 +8,17 @@ export default function Footer() {
         <div
           className="
             flex
-            h-[358.88px]
+            h-auto
+            flex-col
             items-start
             justify-between
-            px-20
-            py-20
+            gap-10
+            py-12
+            lg:h-[358.88px]
+            lg:flex-row
+            lg:gap-0
+            lg:px-20
+            lg:py-20
           "
         >
           {/* Left */}
@@ -20,11 +26,13 @@ export default function Footer() {
             <h2
               className="
                 font-nonchalance
-                text-[40px]
+                text-[24px]
                 font-bold
-                leading-[48px]
+                leading-[28px]
                 tracking-[-0.4px]
                 text-white
+                lg:text-[40px]
+                lg:leading-[48px]
               "
             >
               n natural hair
@@ -38,11 +46,13 @@ export default function Footer() {
               className="
                 mt-2
                 font-nonchalance
-                text-[40px]
+                text-[24px]
                 font-bold
-                leading-[48px]
+                leading-[28px]
                 tracking-[-0.4px]
                 text-white
+                lg:text-[40px]
+                lg:leading-[48px]
               "
             >
               © 2026
@@ -54,13 +64,17 @@ export default function Footer() {
             className="
               flex
               flex-col
-              items-end
+              items-start
               gap-4
-              pt-2
-              text-right
-              text-[18px]
-              leading-[26px]
+              text-left
+              text-[16px]
+              leading-[22px]
               text-[#C6C9AB]
+              lg:items-end
+              lg:pt-2
+              lg:text-right
+              lg:text-[18px]
+              lg:leading-[26px]
             "
           >
             <a href="#">PRIVACY PROTOCOL</a>

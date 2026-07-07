@@ -34,24 +34,24 @@ export default function JobCard({
           : "border-[rgba(209,196,233,.3)] bg-[rgba(26,22,38,.4)]"
       )}
     >
-      <div className="flex items-center justify-between gap-12">
+      <div className="flex flex-col items-start gap-6 lg:flex-row lg:items-center lg:justify-between lg:gap-12">
 
-        <div className="max-w-[672px]">
+        <div className="w-full lg:max-w-[672px]">
 
           <div className="flex gap-2">
             <JobBadge featured={featured}>{level}</JobBadge>
             <JobBadge>{type}</JobBadge>
           </div>
 
-          <h3 className="mt-[11.5px] font-nonchalance text-[24px] font-bold leading-[32px] text-white">
+          <h3 className="mt-[11.5px] font-nonchalance text-[20px] font-bold leading-[28px] text-white lg:text-[24px] lg:leading-[32px]">
             {title}
           </h3>
 
-          <p className="mt-[11.5px] text-[18px] leading-[24px] text-white">
+          <p className="mt-[11.5px] text-[16px] leading-[22px] text-white lg:text-[18px] lg:leading-[24px]">
             {description}
           </p>
 
-          <div className="mt-[11.5px] flex items-center gap-4 text-[18px] leading-[24px] text-[rgba(209,196,233,.8)]">
+          <div className="mt-[11.5px] flex flex-wrap items-center gap-4 text-[16px] leading-[22px] text-[rgba(209,196,233,.8)] lg:text-[18px] lg:leading-[24px]">
 
             <span className="flex items-center gap-2">
               <Image

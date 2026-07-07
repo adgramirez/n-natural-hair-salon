@@ -22,7 +22,7 @@ export default function BenefitCard({
   return (
     <article
       className={clsx(
-        "h-[353px] w-[350px] rounded-[40px] p-10",
+        "w-full min-h-[280px] rounded-[40px] p-6 lg:min-h-[353px] lg:p-10",
         featured ? "bg-[var(--primary)]" : "bg-white"
       )}
     >
@@ -40,11 +40,11 @@ export default function BenefitCard({
         />
       </div>
 
-      <h3 className="mt-8 text-[24px] font-bold leading-[32px] text-[#1A1A1A]">
+      <h3 className="mt-8 text-[20px] font-bold leading-[28px] text-[#1A1A1A] lg:text-[24px] lg:leading-[32px]">
         {title}
       </h3>
 
-      <p className="mt-4 text-[18px] leading-[26px] text-[#666666]">
+      <p className="mt-4 text-[16px] leading-[24px] text-[#666666] lg:text-[18px] lg:leading-[26px]">
         {description}
       </p>
     </article>

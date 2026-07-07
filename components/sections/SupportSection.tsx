@@ -3,11 +3,11 @@ import Container from "@/components/ui/Container";
 
 export default function SupportSection() {
   return (
-    <section className="bg-[var(--bg)] py-24">
+    <section className="bg-[var(--bg)] py-16 lg:py-24">
       <Container>
 
         {/* Heading */}
-        <h2 className="font-nonchalance text-[40px] font-bold leading-[48px] tracking-[-0.4px] text-white">
+        <h2 className="font-nonchalance text-[28px] font-bold leading-[34px] tracking-[-0.4px] text-white lg:text-[40px] lg:leading-[48px]">
           a salon that{" "}
           <span className="text-[var(--primary)]">
             supports
@@ -18,10 +18,10 @@ export default function SupportSection() {
         </h2>
 
         {/* Accent Bar */}
-        <div className="mt-[74px] h-2 w-16 rounded-full bg-[var(--primary)]" />
+        <div className="mt-10 h-2 w-16 rounded-full bg-[var(--primary)] lg:mt-[74px]" />
 
         {/* Content */}
-        <div className="mt-[74px] grid grid-cols-[516px_1fr] gap-[60px]">
+        <div className="mt-10 grid grid-cols-1 gap-8 lg:mt-[74px] lg:grid-cols-[516px_1fr] lg:gap-[60px]">
 
           {/* Left */}
           <Image
@@ -29,53 +29,37 @@ export default function SupportSection() {
             alt="Salon Interior"
             width={516}
             height={531}
-            className="rounded-[12px]"
+            className="h-auto w-full rounded-[12px]"
             priority
           />
 
           {/* Right */}
           <div>
 
-            <p className="text-[18px] leading-[26px] text-white">
-              Most stylists do not leave a salon because they stop
-              <br />
-              loving the work. They leave because they are carrying all
-              <br />
-              of it alone: their own schedule, their own payment
-              <br />
-              chasing, their own marketing, their own difficult clients.
-              <br />
-              The craft gets buried under the admin. That is the part
-              <br />
-              we fixed.
+            <p className="text-[16px] leading-[24px] text-white lg:text-[18px] lg:leading-[26px]">
+              Most stylists do not leave a salon because they stop loving the
+              work. They leave because they are carrying all of it alone:
+              their own schedule, their own payment chasing, their own
+              marketing, their own difficult clients. The craft gets buried
+              under the admin. That is the part we fixed.
             </p>
 
             <div className="mt-6 border-l-2 border-[var(--primary)] pl-5">
 
-              <p className="text-[24px] font-bold leading-[33.6px] text-[#D1C4E9]">
-                We are fertile ground for a fresh
-                <br />
-                start. Careers get built here, with
-                <br />
-                room to grow into more when you
-                <br />
-                are ready.
+              <p className="text-[20px] font-bold leading-[28px] text-[#D1C4E9] lg:text-[24px] lg:leading-[33.6px]">
+                We are fertile ground for a fresh start. Careers get built
+                here, with room to grow into more when you are ready.
               </p>
 
             </div>
 
-            <p className="mt-6 text-[18px] leading-[26px] text-white">
-              Here, the support is already in place. Our HR, marketing,
-              <br />
-              and booking teams handle the parts that drain stylists
-              <br />
-              everywhere else, so your energy goes where it belongs:
-              <br />
-              into textured hair and the person in your chair. We
-              <br />
-              promote an afro-centered aesthetic and treat healthy
-              <br />
-              natural hair as the foundation of every style.
+            <p className="mt-6 text-[16px] leading-[24px] text-white lg:text-[18px] lg:leading-[26px]">
+              Here, the support is already in place. Our HR, marketing, and
+              booking teams handle the parts that drain stylists everywhere
+              else, so your energy goes where it belongs: into textured hair
+              and the person in your chair. We promote an afro-centered
+              aesthetic and treat healthy natural hair as the foundation of
+              every style.
             </p>
 
           </div>

@@ -50,12 +50,11 @@ export default function Navbar() {
           </ul>
 
           {/* Desktop CTA */}
-          <Button
-          href="#"
-          size="sm"
-          >
-            Apply Now
-          </Button>
+          <div className="hidden lg:block">
+            <Button href="#" size="sm">
+              Apply Now
+            </Button>
+          </div>
 
           {/* Mobile Menu Button */}
           <button
