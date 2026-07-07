@@ -42,48 +42,17 @@ export default function ValueCard({
       />
 
       {/* Number */}
-      <span
-        className="
-          absolute
-          right-4
-          top-4
-          font-nonchalance
-          text-[12px]
-          font-bold
-          leading-[12px]
-          tracking-[1.2px]
-          text-[var(--primary)]
-        "
-      >
+      <span className="absolute right-4 top-4 nav-text text-[var(--primary)]">
         {number}
       </span>
 
       {/* Heading */}
-      <h3
-        className="
-          mt-4
-          text-[20px]
-          font-bold
-          leading-[26px]
-          text-white
-          lg:text-[24px]
-          lg:leading-[31px]
-        "
-      >
+      <h3 className="mt-4 card-title font-bold text-white">
         {title}
       </h3>
 
       {/* Paragraph */}
-      <p
-        className="
-          mt-2
-          text-[16px]
-          leading-[22px]
-          text-white
-          lg:text-[18px]
-          lg:leading-[24px]
-        "
-      >
+      <p className="mt-2 card-body text-white">
         {description}
       </p>
     </article>

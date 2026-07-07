@@ -9,7 +9,10 @@ import {
 
 export default function FAQ() {
   return (
-    <section className="bg-[#100C1B] py-16 lg:py-24">
+    <section
+      id="faq"
+      className="scroll-mt-10 bg-[#100C1B] py-16 lg:py-24"
+    >
       <Container>
 
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,420px)_minmax(0,560px)] lg:justify-between lg:gap-0">
@@ -17,7 +20,7 @@ export default function FAQ() {
           {/* Left */}
           <div className="order-1">
 
-            <h2 className="font-nonchalance text-[28px] font-bold leading-[32px] tracking-[-0.4px] text-white lg:text-[40px] lg:leading-[48px]">
+            <h2 className="section-title">
               how to apply
             </h2>
 
@@ -38,7 +41,7 @@ export default function FAQ() {
           {/* Right */}
           <div className="order-2">
 
-            <h2 className="font-nonchalance text-[28px] font-bold leading-[32px] tracking-[-0.4px] text-white lg:text-[40px] lg:leading-[48px]">
+            <h2 className="section-title">
               frequently asked
               <br />
               questions
@@ -51,7 +54,7 @@ export default function FAQ() {
                   key={faq.question}
                   question={faq.question}
                   answer={faq.answer}
-                  defaultOpen={index === 0}
+                  defaultOpen={false}
                 />
               ))}
 

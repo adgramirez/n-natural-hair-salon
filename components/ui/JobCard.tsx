@@ -43,15 +43,15 @@ export default function JobCard({
             <JobBadge>{type}</JobBadge>
           </div>
 
-          <h3 className="mt-[11.5px] font-nonchalance text-[20px] font-bold leading-[28px] text-white lg:text-[24px] lg:leading-[32px]">
+          <h3 className="mt-[11.5px] card-title font-nonchalance font-bold text-white">
             {title}
           </h3>
 
-          <p className="mt-[11.5px] text-[16px] leading-[22px] text-white lg:text-[18px] lg:leading-[24px]">
+          <p className="mt-[11.5px] card-body text-white">
             {description}
           </p>
 
-          <div className="mt-[11.5px] flex flex-wrap items-center gap-4 text-[16px] leading-[22px] text-[rgba(209,196,233,.8)] lg:text-[18px] lg:leading-[24px]">
+          <div className="mt-[11.5px] flex flex-wrap items-center gap-4 card-body text-[rgba(209,196,233,.8)]">
 
             <span className="flex items-center gap-2">
               <Image

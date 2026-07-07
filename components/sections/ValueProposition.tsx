@@ -6,22 +6,13 @@ import { VALUES } from "@/constants/values";
 
 export default function ValueProposition() {
   return (
-    <section className="bg-[var(--bg)] py-16 lg:py-24">
+    <section
+      id="benefits"
+      className="scroll-mt-[var(--navbar-height)] bg-[var(--bg)] py-16 lg:py-24"
+    >
       <Container>
         {/* Heading */}
-        <h2
-        className="
-            text-center
-            font-nonchalance
-            text-[28px]
-            font-bold
-            leading-[32px]
-            tracking-[-0.4px]
-            text-white
-            lg:text-[40px]
-            lg:leading-[40px]
-        "
-        >
+        <h2 className="section-title text-center">
         what you get working here
         </h2>
 

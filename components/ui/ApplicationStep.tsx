@@ -20,7 +20,7 @@ export default function ApplicationStep({
       <div className="flex flex-col items-center">
         <div
           className={clsx(
-            "flex h-8 w-8 items-center justify-center rounded-full text-[14px] font-bold",
+            "flex h-8 w-8 items-center justify-center rounded-full step-number-text",
             number === 2
               ? "border border-[#E1FF00] bg-[#151121] text-[#E1FF00]"
               : number === 3
@@ -46,11 +46,11 @@ export default function ApplicationStep({
       </div>
 
       <div>
-        <h3 className="text-[20px] leading-[24px] text-white lg:text-[24px] lg:leading-[26px]">
+        <h3 className="card-title font-normal text-white">
           {title}
         </h3>
 
-        <p className="mt-2 text-[16px] leading-[22px] text-white lg:text-[18px] lg:leading-[24px]">
+        <p className="mt-2 card-body text-white">
           {description}
         </p>
       </div>

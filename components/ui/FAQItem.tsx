@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import clsx from "clsx";
 
 interface FAQItemProps {
@@ -28,26 +28,31 @@ export default function FAQItem({
     >
       <button
         onClick={() => setOpen(!open)}
+        aria-expanded={open}
         className="flex w-full items-center justify-between gap-4 p-4 text-left"
       >
-        <span className="text-[16px] leading-[24px] text-white lg:text-[18px] lg:leading-[32px]">
+        <span className="card-body text-white">
           {question}
         </span>
 
-        {open ? (
-          <ChevronUp size={18} className="shrink-0 text-white" />
-        ) : (
-          <ChevronDown size={18} className="shrink-0 text-white" />
-        )}
+        <ChevronDown
+          size={18}
+          className={clsx(
+            "shrink-0 text-white transition-transform duration-300",
+            open && "rotate-180"
+          )}
+        />
       </button>
 
-      {open && (
-        <div className="px-4 pb-4">
-          <p className="text-[16px] leading-[24px] text-[rgba(247,250,227,.3)] lg:text-[18px] lg:leading-[32px]">
-            {answer}
-          </p>
+      <div className="accordion-panel" data-open={open}>
+        <div aria-hidden={!open}>
+          <div className="px-4 pb-4">
+            <p className="card-body text-[rgba(247,250,227,.3)]">
+              {answer}
+            </p>
+          </div>
         </div>
-      )}
+      </div>
     </article>
   );
 }

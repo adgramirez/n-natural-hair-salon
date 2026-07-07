@@ -4,17 +4,20 @@ import { JOBS } from "@/constants/jobs";
 
 export default function JobBoard() {
   return (
-    <section className="bg-[var(--bg)] py-16 lg:py-24">
+    <section
+      id="journey"
+      className="scroll-mt-[var(--navbar-height)] bg-[var(--bg)] py-16 lg:py-24"
+    >
       <Container>
 
         {/* Heading */}
         <div className="w-full border-b border-[rgba(209,196,233,.2)] pb-8 lg:mx-auto lg:max-w-[1120px]">
 
-          <h2 className="font-nonchalance text-[28px] font-bold leading-[32px] tracking-[-0.4px] text-white lg:text-[40px] lg:leading-[48px]">
+          <h2 className="section-title">
             open roles
           </h2>
 
-          <p className="mt-2 text-[16px] leading-[24px] text-[#C6C9AB] lg:text-[18px] lg:leading-[26px]">
+          <p className="mt-2 card-body text-[var(--text-secondary)]">
             NATURAL HAIR STYLIST JOBS AND MORE
           </p>
 
@@ -47,9 +50,7 @@ export default function JobBoard() {
             bg-[#1D1929]
             px-4
             py-3
-            text-[16px]
-            leading-[22px]
-            font-normal
+            card-body
             lg:mx-auto
             lg:min-h-[58px]
             lg:max-w-[1120px]
@@ -58,8 +59,6 @@ export default function JobBoard() {
             lg:items-center
             lg:gap-0
             lg:py-0
-            lg:text-[18px]
-            lg:leading-[24px]
           "
         >
           <span className="text-[rgba(209,196,233,.9)]">

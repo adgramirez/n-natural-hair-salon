@@ -80,19 +80,9 @@ body {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
-/* Navigation */
+/* Navigation / Buttons */
 
 .nav-text {
-  font-family: var(--font-nonchalance);
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 12px;
-  letter-spacing: 1.2px;
-}
-
-/* Buttons */
-
-.button-text {
   font-family: var(--font-nonchalance);
   font-size: 12px;
   font-weight: 700;
@@ -104,40 +94,47 @@ body {
 
 .section-title {
   font-family: var(--font-nonchalance);
-  font-size: 40px;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 48px;
+  line-height: 32px;
   letter-spacing: -0.4px;
   color: var(--text);
 }
 
-.section-subtitle {
-  font-family: var(--font-sora);
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 26px;
-  color: var(--text-secondary);
+@media (min-width: 1024px) {
+  .section-title {
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 
 /* Cards */
 
 .card-title {
-  font-family: var(--font-nonchalance);
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 32px;
-  color: var(--text);
+  font-size: 20px;
+  line-height: 28px;
+}
+
+@media (min-width: 1024px) {
+  .card-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 .card-body {
   font-family: var(--font-sora);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  color: var(--text);
 }
 
-/* Body */
+@media (min-width: 1024px) {
+  .card-body {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
 
 .body-large {
   font-family: var(--font-sora);
@@ -154,17 +151,120 @@ body {
   letter-spacing: 1.2px;
 }
 
+/* Support Section */
+
+.support-quote {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #d1c4e9;
+}
+
+@media (min-width: 1024px) {
+  .support-quote {
+    font-size: 24px;
+    line-height: 33.6px;
+  }
+}
+
 /* Value Proposition */
 
-/*
-  Card top/left are per-item pixel coordinates tuned for the desktop collage
-  (positioned over a fixed 1256px-wide image). They only apply at lg and up;
-  below that the cards stack in normal flow instead. Passed in via CSS custom
-  properties since their values are dynamic (data-driven), not static classes.
-*/
 @media (min-width: 1024px) {
   .value-card {
     top: var(--card-top);
     left: var(--card-left);
+  }
+}
+
+/* ==========================================================
+   Carousel
+========================================================== */
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel-track {
+    scroll-behavior: auto;
+  }
+}
+
+/* Job Board */
+
+.job-badge-text {
+  font-family: var(--font-nonchalance);
+  font-size: 10px;
+  line-height: 15px;
+}
+
+/* ==========================================================
+   Accordion
+========================================================== */
+
+.accordion-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 300ms ease-in-out;
+}
+
+.accordion-panel[data-open="true"] {
+  grid-template-rows: 1fr;
+}
+
+.accordion-panel > div {
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .accordion-panel {
+    transition-duration: 0.01ms;
+  }
+}
+
+/* FAQ */
+
+.step-number-text {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* Final CTA */
+
+.final-cta-heading {
+  font-family: var(--font-nonchalance);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -1.28px;
+  color: var(--text);
+}
+
+@media (min-width: 1024px) {
+  .final-cta-heading {
+    font-size: 64px;
+    line-height: 70.4px;
+  }
+}
+
+.final-cta-body {
+  font-family: var(--font-nonchalance);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: -0.5px;
+  color: var(--text);
+}
+
+@media (min-width: 1024px) {
+  .final-cta-body {
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: -1.28px;
   }
 }
