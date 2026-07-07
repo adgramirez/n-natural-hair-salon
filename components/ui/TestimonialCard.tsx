@@ -18,33 +18,14 @@ export default function TestimonialCard({
         p-6
         shadow-[0_20px_40px_rgba(224,75,0,0.05)]
         lg:min-h-[361px]
-        lg:w-[400px]
         lg:p-10
       "
     >
-      <p
-        className="
-          text-[16px]
-          leading-[24px]
-          text-white
-          lg:text-[18px]
-          lg:leading-[26px]
-        "
-      >
+      <p className="card-body text-white">
         {quote}
       </p>
 
-      <p
-        className="
-          mt-0
-          text-right
-          text-[16px]
-          leading-[24px]
-          text-white
-          lg:text-[18px]
-          lg:leading-[26px]
-        "
-      >
+      <p className="mt-0 text-right card-body text-white">
         {author}
       </p>
     </article>

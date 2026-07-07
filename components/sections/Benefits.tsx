@@ -4,7 +4,10 @@ import { BENEFITS } from "@/constants/benefits";
 
 export default function Benefits() {
   return (
-    <section className="relative overflow-hidden bg-[var(--bg)] py-16 lg:py-24">
+    <section
+      id="culture"
+      className="relative scroll-mt-10 overflow-hidden bg-[var(--bg)] py-16 lg:py-24"
+    >
 
       {/* Decorative Glow */}
       <div
@@ -26,7 +29,7 @@ export default function Benefits() {
 
         <div className="lg:ml-10">
 
-          <h2 className="font-nonchalance text-[32px] font-bold leading-[36px] text-white lg:text-[48px] lg:leading-[48px]">
+          <h2 className="section-title">
             why natural hair
             <br />
             <span className="text-[var(--primary)]">

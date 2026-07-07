@@ -12,7 +12,7 @@ export default function JobBadge({
   return (
     <span
       className={clsx(
-        "inline-flex h-[23px] items-center rounded-full px-3 text-[10px] leading-[15px] font-nonchalance",
+        "inline-flex h-[23px] items-center rounded-full px-3 job-badge-text",
         featured
           ? "border border-[rgba(225,255,0,.3)] bg-[rgba(225,255,0,.1)] text-[var(--primary)]"
           : "bg-[rgba(209,196,233,.1)] text-white"

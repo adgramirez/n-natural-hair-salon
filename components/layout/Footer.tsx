@@ -23,18 +23,7 @@ export default function Footer() {
         >
           {/* Left */}
           <div>
-            <h2
-              className="
-                font-nonchalance
-                text-[24px]
-                font-bold
-                leading-[28px]
-                tracking-[-0.4px]
-                text-white
-                lg:text-[40px]
-                lg:leading-[48px]
-              "
-            >
+            <h2 className="section-title">
               n natural hair
               <br />
               studio. the future of
@@ -42,19 +31,7 @@ export default function Footer() {
               clinical texture.
             </h2>
 
-            <p
-              className="
-                mt-2
-                font-nonchalance
-                text-[24px]
-                font-bold
-                leading-[28px]
-                tracking-[-0.4px]
-                text-white
-                lg:text-[40px]
-                lg:leading-[48px]
-              "
-            >
+            <p className="mt-2 section-title">
               © 2026
             </p>
           </div>
@@ -67,14 +44,11 @@ export default function Footer() {
               items-start
               gap-4
               text-left
-              text-[16px]
-              leading-[22px]
-              text-[#C6C9AB]
+              card-body
+              text-[var(--text-secondary)]
               lg:items-end
               lg:pt-2
               lg:text-right
-              lg:text-[18px]
-              lg:leading-[26px]
             "
           >
             <a href="#">PRIVACY PROTOCOL</a>

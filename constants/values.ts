@@ -55,7 +55,7 @@ export const VALUES = [
     iconHeight: 30,
     title: "Work that means something",
     description:
-      "We help foster confidence, advocate acceptance of self, and build community. We live in the cross section of beauty and power, where being Black and celebrated is its own kind of freedom. The biggest work is the people.",
+      "We help foster confidence, advocate acceptance of self, and build community. We live in the cross section of beauty and power, where being Black and celebrated is its own kind of freedom.",
     top: 942,
     left: 774,
   },

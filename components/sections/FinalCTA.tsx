@@ -34,18 +34,7 @@ export default function FinalCTA() {
         <div className="relative mx-auto flex max-w-[768px] flex-col items-center text-center">
 
           {/* Heading */}
-          <h2
-            className="
-              font-nonchalance
-              text-[26px]
-              font-bold
-              leading-[30px]
-              tracking-[-1.28px]
-              text-white
-              lg:text-[64px]
-              lg:leading-[70.4px]
-            "
-          >
+          <h2 className="final-cta-heading">
             build your career
             <br />
             where your craft
@@ -54,22 +43,7 @@ export default function FinalCTA() {
           </h2>
 
           {/* Paragraph */}
-          <p
-            className="
-              mt-8
-              w-full
-              max-w-[620px]
-              font-nonchalance
-              text-[14px]
-              font-bold
-              leading-[19px]
-              tracking-[-0.5px]
-              text-white
-              lg:text-[16px]
-              lg:leading-[21px]
-              lg:tracking-[-1.28px]
-            "
-          >
+          <p className="mt-8 w-full max-w-[620px] final-cta-body">
             You do not have to choose between doing great work and being
             supported while you do it. Here, you get both: the freedom to focus
             on your craft and a team that has your back on everything else.

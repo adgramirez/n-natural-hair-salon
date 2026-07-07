@@ -40,11 +40,11 @@ export default function BenefitCard({
         />
       </div>
 
-      <h3 className="mt-8 text-[20px] font-bold leading-[28px] text-[#1A1A1A] lg:text-[24px] lg:leading-[32px]">
+      <h3 className="mt-8 card-title font-bold text-[#1a1a1a]">
         {title}
       </h3>
 
-      <p className="mt-4 text-[16px] leading-[24px] text-[#666666] lg:text-[18px] lg:leading-[26px]">
+      <p className="mt-4 card-body text-[#666666]">
         {description}
       </p>
     </article>
