@@ -46,11 +46,11 @@ export default function ApplicationStep({
       </div>
 
       <div>
-        <h3 className="text-[24px] leading-[26px] text-white">
+        <h3 className="text-[20px] leading-[24px] text-white lg:text-[24px] lg:leading-[26px]">
           {title}
         </h3>
 
-        <p className="mt-2 text-[18px] leading-[24px] text-white">
+        <p className="mt-2 text-[16px] leading-[22px] text-white lg:text-[18px] lg:leading-[24px]">
           {description}
         </p>
       </div>

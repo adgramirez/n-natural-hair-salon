@@ -21,11 +21,13 @@ export default function ValueCard({
 }: ValueCardProps) {
   return (
     <article
-      className="absolute h-[346px] w-[360px] rounded-[20px] bg-[#3B3748] p-8"
-      style={{
-        top: `${top}px`,
-        left: `${left}px`,
-      }}
+      className="value-card relative mt-6 w-full min-h-[220px] rounded-[20px] bg-[#3B3748] p-6 lg:absolute lg:mt-0 lg:h-[346px] lg:w-[360px] lg:p-8"
+      style={
+        {
+          "--card-top": `${top}px`,
+          "--card-left": `${left}px`,
+        } as React.CSSProperties
+      }
     >
       {/* Icon */}
       <Image
@@ -60,10 +62,12 @@ export default function ValueCard({
       <h3
         className="
           mt-4
-          text-[24px]
+          text-[20px]
           font-bold
-          leading-[31px]
+          leading-[26px]
           text-white
+          lg:text-[24px]
+          lg:leading-[31px]
         "
       >
         {title}
@@ -73,9 +77,11 @@ export default function ValueCard({
       <p
         className="
           mt-2
-          text-[18px]
-          leading-[24px]
+          text-[16px]
+          leading-[22px]
           text-white
+          lg:text-[18px]
+          lg:leading-[24px]
         "
       >
         {description}

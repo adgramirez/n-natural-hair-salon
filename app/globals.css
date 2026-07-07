@@ -153,3 +153,18 @@ body {
   line-height: 12px;
   letter-spacing: 1.2px;
 }
+
+/* Value Proposition */
+
+/*
+  Card top/left are per-item pixel coordinates tuned for the desktop collage
+  (positioned over a fixed 1256px-wide image). They only apply at lg and up;
+  below that the cards stack in normal flow instead. Passed in via CSS custom
+  properties since their values are dynamic (data-driven), not static classes.
+*/
+@media (min-width: 1024px) {
+  .value-card {
+    top: var(--card-top);
+    left: var(--card-left);
+  }
+}

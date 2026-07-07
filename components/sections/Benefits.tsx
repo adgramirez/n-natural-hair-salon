@@ -4,7 +4,7 @@ import { BENEFITS } from "@/constants/benefits";
 
 export default function Benefits() {
   return (
-    <section className="relative overflow-hidden bg-[var(--bg)] py-24">
+    <section className="relative overflow-hidden bg-[var(--bg)] py-16 lg:py-24">
 
       {/* Decorative Glow */}
       <div
@@ -24,9 +24,9 @@ export default function Benefits() {
 
       <Container>
 
-        <div className="ml-10">
+        <div className="lg:ml-10">
 
-          <h2 className="font-nonchalance text-[48px] font-bold leading-[48px] text-white">
+          <h2 className="font-nonchalance text-[32px] font-bold leading-[36px] text-white lg:text-[48px] lg:leading-[48px]">
             why natural hair
             <br />
             <span className="text-[var(--primary)]">
@@ -38,13 +38,13 @@ export default function Benefits() {
           <div className="mt-6 h-2 w-16 rounded-full bg-[var(--primary)]" />
         </div>
 
-        <div className="mt-[50px] mx-auto grid w-[1114px] grid-cols-3 gap-8">
+        <div className="mt-10 mx-auto grid w-full max-w-[1114px] grid-cols-1 gap-8 sm:grid-cols-2 lg:mt-[50px] lg:grid-cols-3">
           {BENEFITS.slice(0, 3).map((benefit) => (
             <BenefitCard key={benefit.title} {...benefit} />
           ))}
         </div>
 
-        <div className="mt-8 mx-auto grid w-[732px] grid-cols-2 gap-8">
+        <div className="mt-8 mx-auto grid w-full max-w-[732px] grid-cols-1 gap-8 sm:grid-cols-2">
           {BENEFITS.slice(3).map((benefit) => (
             <BenefitCard key={benefit.title} {...benefit} />
           ))}

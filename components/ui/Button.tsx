@@ -20,14 +20,14 @@ export default function Button({
     sm: "h-[36px] min-w-[144px] px-6",
     lg: "h-[44px] min-w-[214px] px-8",
     job: "h-[52px] w-[251px] px-6",
-    cta: "h-[68px] w-[584px] px-10",
+    cta: "h-[56px] w-full max-w-[584px] px-6 lg:h-[68px] lg:px-10",
   };
 
   const typographyClasses = {
     sm: "button-text",
     lg: "button-text",
     job: "font-nonchalance font-bold text-[16px] leading-[24px] tracking-[0px]",
-    cta: "font-nonchalance font-bold text-[18px] leading-[28px] tracking-[1.8px]",
+    cta: "font-nonchalance font-bold text-[13px] leading-[20px] tracking-[1px] lg:text-[18px] lg:leading-[28px] lg:tracking-[1.8px]",
   };
 
   return (

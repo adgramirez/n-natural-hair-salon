@@ -6,24 +6,26 @@ import { VALUES } from "@/constants/values";
 
 export default function ValueProposition() {
   return (
-    <section className="bg-[var(--bg)] py-24">
+    <section className="bg-[var(--bg)] py-16 lg:py-24">
       <Container>
         {/* Heading */}
         <h2
         className="
             text-center
             font-nonchalance
-            text-[40px]
+            text-[28px]
             font-bold
-            leading-[40px]
+            leading-[32px]
             tracking-[-0.4px]
             text-white
+            lg:text-[40px]
+            lg:leading-[40px]
         "
         >
         what you get working here
         </h2>
 
-        <div className="relative mt-[20.88px] h-[1380px]">
+        <div className="relative mt-[20.88px] h-auto lg:h-[1380px]">
 
         {/* Team Image */}
         <div className="relative flex justify-center">
@@ -33,11 +35,7 @@ export default function ValueProposition() {
             width={1256}
             height={938}
             priority
-            style={{
-            width: "1256px",
-            height: "938px",
-            maxWidth: "none",
-            }}
+            className="h-auto w-full lg:w-[1256px] lg:max-w-none"
           />
 
         {/* Bottom Gradient Fade */}
@@ -47,13 +45,15 @@ export default function ValueProposition() {
             absolute
             bottom-0
             left-1/2
-            h-[280px]
-            w-[1256px]
+            h-[140px]
+            w-full
             -translate-x-1/2
             bg-gradient-to-t
             from-[var(--bg)]
             via-[rgba(21,17,33,0.75)]
             to-transparent
+            lg:h-[280px]
+            lg:w-[1256px]
             "
           />
         </div>
