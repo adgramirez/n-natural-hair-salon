@@ -1,12 +1,45 @@
 @import "tailwindcss";
 
+/* ==========================================================
+   Design Tokens
+========================================================== */
+
 :root {
+  /* Colors */
   --bg: #151121;
-  --surface: #f8f7f5;
-  --text: #ffffff;
-  --muted: #b6b4bd;
-  --primary: #e8ff2f;
+  --bg-dark: #100C1B;
+
+  --primary: #E1FF00;
+
+  --surface: #1D1929;
+  --card: #211D2E;
+  --card-alt: #3B3748;
+
+  --text: #FFFFFF;
+  --text-secondary: #C6C9AB;
+  --text-muted: rgba(209, 196, 233, 0.8);
+
+  --border: rgba(209, 196, 233, 0.1);
+  --border-light: rgba(209, 196, 233, 0.2);
+  --border-medium: rgba(209, 196, 233, 0.3);
+
+  --navbar-height: 80px;
 }
+
+@theme {
+  --color-bg: var(--bg);
+  --color-primary: var(--primary);
+  --color-surface: var(--surface);
+  --color-card: var(--card);
+
+  --color-text: var(--text);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+}
+
+/* ==========================================================
+   Base
+========================================================== */
 
 html {
   scroll-behavior: smooth;
@@ -26,56 +59,97 @@ body {
   font-family: var(--font-nonchalance), cursive;
 }
 
-@theme {
-  --color-bg: #151121;
-  --color-primary: #E1FF00;
-  --color-text-secondary: #C6C9AB;
-  --color-text-muted: rgba(209,196,233,.8);
-}
+/* ==========================================================
+   Typography Utilities
+========================================================== */
 
-/* ===========================
-   Typography
-=========================== */
+/* Hero */
 
 .hero-heading {
-  font-family: var(--font-nonchalance), cursive;
-  font-size: 56px;
+  font-family: var(--font-nonchalance);
+  font-size: clamp(32px, 8cqw, 56px);
   font-weight: 400;
-  line-height: 61px;
+  line-height: clamp(38px, 8.6cqw, 61px);
   letter-spacing: -1.28px;
-  text-shadow: 0 0 10px rgba(0,0,0,.45);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
 }
 
 .hero-highlight {
   font-weight: 700;
   color: var(--primary);
-  text-shadow: 0 0 10px rgba(225, 255, 0, 0.2);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
+
+/* Navigation */
 
 .nav-text {
-  font-family: var(--font-nonchalance), cursive;
+  font-family: var(--font-nonchalance);
   font-size: 12px;
   font-weight: 700;
   line-height: 12px;
   letter-spacing: 1.2px;
 }
+
+/* Buttons */
 
 .button-text {
-  font-family: var(--font-nonchalance), cursive;
+  font-family: var(--font-nonchalance);
   font-size: 12px;
   font-weight: 700;
   line-height: 12px;
   letter-spacing: 1.2px;
 }
 
-.body-large {
+/* Sections */
+
+.section-title {
+  font-family: var(--font-nonchalance);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.4px;
+  color: var(--text);
+}
+
+.section-subtitle {
+  font-family: var(--font-sora);
   font-size: 18px;
-  line-height: 26px;
   font-weight: 400;
+  line-height: 26px;
+  color: var(--text-secondary);
+}
+
+/* Cards */
+
+.card-title {
+  font-family: var(--font-nonchalance);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: var(--text);
+}
+
+.card-body {
+  font-family: var(--font-sora);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--text);
+}
+
+/* Body */
+
+.body-large {
+  font-family: var(--font-sora);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
 }
 
 .caption-text {
+  font-family: var(--font-sora);
   font-size: 14px;
+  font-weight: 400;
   line-height: 12px;
   letter-spacing: 1.2px;
 }
