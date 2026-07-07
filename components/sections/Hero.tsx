@@ -115,7 +115,7 @@ export default function Hero() {
             actually <span className="hero-highlight">built</span>
           </h1>
 
-          <p className="body-large mt-[31px] text-[var(--text-secondary)]">
+          <p className="body-large mt-[31px]">
             You came into this work because you love natural hair. But loving
             the craft isn't enough if the environment drains you. You need a
             salon that respects your time, pays you what you're worth, and
